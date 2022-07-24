@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCaseGenerator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/TestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/table_model/TableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/triangle/TriangleUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/triangle/TriangleUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/CommissionTestCaseGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/RobustCommissionTestCaseGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/RobustTriangleTestCaseGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/TriangleTestCaseGenerator.java" afterDir="false" />
-    </list>
+    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Implement all needed to gen testcases" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,8 +69,16 @@
       <updated>1658528874910</updated>
       <workItem from="1658528876242" duration="3729000" />
       <workItem from="1658554961594" duration="5056000" />
-      <workItem from="1658621268381" duration="11316000" />
+      <workItem from="1658621268381" duration="11861000" />
     </task>
+    <task id="LOCAL-00001" summary="Implement all needed to gen testcases">
+      <created>1658638366982</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658638366982</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +94,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement all needed to gen testcases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement all needed to gen testcases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
