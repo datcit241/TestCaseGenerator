@@ -21,7 +21,7 @@ public class TableModel extends AbstractTableModel {
         this.dataList = testcases;
 
         testcases.forEach(testcase -> {
-            this.rows.add(new Object[]{testcase.getId(), testcase.getFirstInputVariable(), testcase.getSecondInputVariable(), testcase.getThirdInputVariable(), testcase.getExpectedOutput()});
+            this.rows.add(new Object[]{testcase.getId(), testcase.getInputValue(0), testcase.getInputValue(1), testcase.getInputValue(2), testcase.getExpectedOutput()});
         });
     }
 

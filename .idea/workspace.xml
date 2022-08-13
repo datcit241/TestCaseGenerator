@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Implement all needed to gen testcases" />
+    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Implement all needed to gen testcases">
+      <change afterPath="$PROJECT_DIR$/src/entity/Variable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/abstraction/ExtremeBoundaryValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/abstraction/TestCaseGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/implementation/CommissionTestGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utilities/implementation/TriangleTestGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/table_model/TableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/table_model/TableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/CommissionTestCaseGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/RobustCommissionTestCaseGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/RobustTriangleTestCaseGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/TriangleTestCaseGenerator.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -29,6 +49,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Project.color&quot;: &quot;3984ff&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -39,6 +60,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propGUI&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="entity" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
@@ -70,6 +96,10 @@
       <workItem from="1658528876242" duration="3729000" />
       <workItem from="1658554961594" duration="5056000" />
       <workItem from="1658621268381" duration="11861000" />
+      <workItem from="1660370435184" duration="1063000" />
+      <workItem from="1660371590732" duration="5064000" />
+      <workItem from="1660376780876" duration="2633000" />
+      <workItem from="1660424368370" duration="7469000" />
     </task>
     <task id="LOCAL-00001" summary="Implement all needed to gen testcases">
       <created>1658638366982</created>
@@ -98,20 +128,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement all needed to gen testcases" />
     <option name="LAST_COMMIT_MESSAGE" value="Implement all needed to gen testcases" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/utilities/TriangleTestCaseGenerator.java</url>
-          <line>25</line>
-          <properties class="utilities.TriangleTestCaseGenerator" method="initInputValues">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

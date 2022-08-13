@@ -1,38 +1,43 @@
 package entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestCase {
     private int id;
-    private int firstInputVariable;
-    private int secondInputVariable;
-    private int thirdInputVariable;
+    private List<Integer> inputValues;
     private String expectedOutput;
 
-    public TestCase(int id, int firstInputVariable, int secondInputVariable, int thirdInputVariable) {
+    public TestCase(int id, Integer... inputValues) {
         this.id = id;
-        this.firstInputVariable = firstInputVariable;
-        this.secondInputVariable = secondInputVariable;
-        this.thirdInputVariable = thirdInputVariable;
-    }
 
-    public TestCase(int id, int firstInputVariable, int secondInputVariable, int thirdInputVariable, String expectedOutput) {
-        this(id, firstInputVariable, secondInputVariable, thirdInputVariable);
-        this.expectedOutput = expectedOutput;
+        this.inputValues = new ArrayList<>();
+        this.inputValues.addAll(List.of(inputValues));
     }
 
     public int getId() {
         return id;
     }
 
-    public int getFirstInputVariable() {
-        return firstInputVariable;
+    public List<Integer> getInputValues() {
+        return this.inputValues;
     }
 
-    public int getSecondInputVariable() {
-        return secondInputVariable;
+    public Integer getInputValue(int n) {
+        return isInBound(n) ? this.inputValues.get(n) : null;
     }
 
-    public int getThirdInputVariable() {
-        return thirdInputVariable;
+    public boolean setInputValue(int n, Integer val) {
+        if (this.isInBound(n)) {
+            this.inputValues.set(n, val);
+            return true;
+        }
+
+        return false;
+    }
+
+    private boolean isInBound(int n) {
+        return n > -1 && n < this.inputValues.size();
     }
 
     public String getExpectedOutput() {
@@ -45,6 +50,12 @@ public class TestCase {
 
     @Override
     public String toString() {
-        return "" + this.firstInputVariable + "," + this.secondInputVariable + "," + this.thirdInputVariable + "," + this.expectedOutput;
+        final String[] string = {""};
+
+        this.inputValues.forEach(inputValue -> {
+            string[0] += inputValue.toString() + ",";
+        });
+
+        return string[0] + this.expectedOutput;
     }
 }
