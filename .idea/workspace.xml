@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Implement all needed to gen testcases">
-      <change afterPath="$PROJECT_DIR$/src/entity/Variable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/abstraction/ExtremeBoundaryValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/abstraction/TestCaseGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/implementation/CommissionTestGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilities/implementation/TriangleTestGen.java" afterDir="false" />
+    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Finish implementation">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/flatlaf-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/Problem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/TestingMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/views/MainFrame.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/views/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/views/MyFileChooser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/table_model/TableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/table_model/TableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/CommissionTestCaseGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/RobustCommissionTestCaseGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/RobustTriangleTestCaseGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/TriangleTestCaseGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCaseGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestCaseGenerator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/table_model/TableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/table_model/TableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/abstraction/ExtremeBoundaryValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/abstraction/ExtremeBoundaryValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/abstraction/TestCaseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/abstraction/TestCaseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/implementation/CommissionTestGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/implementation/CommissionTestGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/implementation/TriangleTestGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/implementation/TriangleTestGen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -47,25 +59,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Project.color&quot;: &quot;3984ff&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propGUI&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "3984ff",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/datvo/IdeaProjects/TestCaseGenerator/src/lib/flatlaf-2.4.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="entity" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="TestCaseGenerator" />
@@ -79,9 +99,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="views.MainFrame" />
+      <module name="TestCaseGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -99,7 +133,12 @@
       <workItem from="1660370435184" duration="1063000" />
       <workItem from="1660371590732" duration="5064000" />
       <workItem from="1660376780876" duration="2633000" />
-      <workItem from="1660424368370" duration="7469000" />
+      <workItem from="1660424368370" duration="8271000" />
+      <workItem from="1660524913928" duration="12000" />
+      <workItem from="1660879266966" duration="5342000" />
+      <workItem from="1660887967878" duration="14703000" />
+      <workItem from="1660906736363" duration="12623000" />
+      <workItem from="1660920557114" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="Implement all needed to gen testcases">
       <created>1658638366982</created>
@@ -108,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658638366982</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finish implementation">
+      <created>1660432049129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660432049129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +173,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement all needed to gen testcases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement all needed to gen testcases" />
+    <MESSAGE value="Finish implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish implementation" />
   </component>
 </project>

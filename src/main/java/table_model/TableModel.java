@@ -2,11 +2,12 @@ package table_model;
 
 import entity.TestCase;
 
+import javax.swing.*;
 import javax.swing.table.*;
 import java.util.*;
 
 public class TableModel extends AbstractTableModel {
-    private String[] fieldNames = {"Test case", "Input 1", "Input 2", "Input 3", "Expected Output"};
+    private String[] fieldNames = {"#", "Input 1", "Input 2", "Input 3", "Expected Output"};
     private List<TestCase> dataList = new ArrayList<>();
     private List<Object[]> rows = new ArrayList<>();
 
@@ -21,7 +22,7 @@ public class TableModel extends AbstractTableModel {
         this.dataList = testcases;
 
         testcases.forEach(testcase -> {
-            this.rows.add(new Object[]{testcase.getId(), testcase.getInputValue(0), testcase.getInputValue(1), testcase.getInputValue(2), testcase.getExpectedOutput()});
+            this.rows.add(testcase.getValues().toArray());
         });
     }
 
@@ -49,6 +50,7 @@ public class TableModel extends AbstractTableModel {
     }
 
     public Class getColumnClass(int columnIndex) {
-        return (rows.size() == 0 ? null : this.rows.get(0)[columnIndex]).getClass();
+//        return rows.size() == 0 ? null : this.rows.get(0)[columnIndex].getClass();
+        return Object.class;
     }
 }

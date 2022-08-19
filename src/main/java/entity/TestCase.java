@@ -15,8 +15,15 @@ public class TestCase {
         this.inputValues.addAll(List.of(inputValues));
     }
 
-    public int getId() {
-        return id;
+    public int getId() { return id; }
+
+    public List<Object> getValues() {
+        List<Object> list = new ArrayList<>();
+        list.add(this.getId());
+        list.addAll(this.getInputValues());
+        list.add(this.getExpectedOutput());
+
+        return list;
     }
 
     public List<Integer> getInputValues() {

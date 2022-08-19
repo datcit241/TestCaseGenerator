@@ -1,18 +1,26 @@
 package main;
 
-import entity.TestCase;
-import entity.Variable;
-import utilities.implementation.CommissionTestGen;
-import utilities.implementation.TriangleTestGen;
-import utilities.abstraction.ExtremeBoundaryValues;
+import com.formdev.flatlaf.*;
+import entity.*;
+import utilities.implementation.*;
+import utilities.abstraction.*;
+import views.*;
 
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
+        FlatIntelliJLaf.setup();
+        new MainFrame();
+    }
+
+    static void printToConsole() {
         ExtremeBoundaryValues normalExtremeBoundaryValues = variable -> new Integer[]{variable.getMin(), variable.getMinUpper(), variable.getMaxLower(), variable.getMax()};
         ExtremeBoundaryValues robustExtremeBoundaryValues = variable -> new Integer[]{variable.getMinLower(), variable.getMin(), variable.getMinUpper(), variable.getMaxLower(), variable.getMax(), variable.getMaxUpper()};
+
+        String[] triangleHeaders = {"#", "Side 1", "Side 2", "Side 3", "Expected Output"};
+        String[] commissionHeaders = {"#", "Stocks", "Locks", "Barrels", "Expected Output"};
 
         System.out.println("----------------------------------------------------------------------------------------------------");
         System.out.println("Triangle: normal extreme input values");
