@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Finish implementation">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/flatlaf-2.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/Problem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/TestingMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/MainFrame.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/MyFileChooser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCaseGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestCaseGenerator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Variable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/table_model/TableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/table_model/TableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/abstraction/ExtremeBoundaryValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/abstraction/ExtremeBoundaryValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/abstraction/TestCaseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/abstraction/TestCaseGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/implementation/CommissionTestGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/implementation/CommissionTestGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/implementation/TriangleTestGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/implementation/TriangleTestGen.java" afterDir="false" />
+    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Add UI">
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/MainFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +117,7 @@
       <workItem from="1660879266966" duration="5342000" />
       <workItem from="1660887967878" duration="14703000" />
       <workItem from="1660906736363" duration="12623000" />
-      <workItem from="1660920557114" duration="304000" />
+      <workItem from="1660920557114" duration="896000" />
     </task>
     <task id="LOCAL-00001" summary="Implement all needed to gen testcases">
       <created>1658638366982</created>
@@ -154,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660432049129</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add UI">
+      <created>1660920880291</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660920880291</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement all needed to gen testcases" />
     <MESSAGE value="Finish implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish implementation" />
+    <MESSAGE value="Add UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add UI" />
   </component>
 </project>

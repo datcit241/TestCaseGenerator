@@ -25,6 +25,8 @@ public class MainFrame extends JFrame {
 
     private List<TestCase> testCases;
     private String[] headers;
+    private Problem currentlyDisplayedProblem;
+    private TestingMethod currentlyDisplayedMethod;
 
     private JPanel pnlMain;
     private JTable tblTestCases;
@@ -68,6 +70,8 @@ public class MainFrame extends JFrame {
         this.cmbProblem.addItem(Problem.Triangle);
         this.cmbProblem.addItem(Problem.Commission);
         this.cmbProblem.setSelectedItem(Problem.Triangle);
+
+        this.btnSave.setEnabled(false);
 
         this.addListeners();
 
@@ -114,7 +118,7 @@ public class MainFrame extends JFrame {
         });
 
         this.btnGenerate.addActionListener(e -> {
-            generateTestCases();
+            handleGeneratingTestCases();
         });
 
         this.btnSave.addActionListener(e -> {
@@ -123,17 +127,23 @@ public class MainFrame extends JFrame {
 
     }
 
+    private void handleGeneratingTestCases() {
+        if (this.currentlyDisplayedMethod == null) {
+            this.btnSave.setEnabled(true);
+        }
+        this.currentlyDisplayedProblem = (Problem) this.cmbProblem.getSelectedItem();
+        this.currentlyDisplayedMethod = (this.rbNormal.isSelected() ? TestingMethod.NormalBoundaryValues : TestingMethod.RobustBoundaryValues);
+
+        this.generateTestCases();
+    }
+
     private void generateTestCases() {
-        Problem selectedProblem = (Problem) this.cmbProblem.getSelectedItem();
-
-        boolean isNormalTesting = this.rbNormal.isSelected();
-
-        String[] headers = (selectedProblem == Problem.Triangle ? triangleHeaders : commissionHeaders);
-        ExtremeBoundaryValues extremeBoundaryValues = (isNormalTesting ? normalExtremeBoundaryValues : robustExtremeBoundaryValues);
+        String[] headers = (currentlyDisplayedProblem == Problem.Triangle ? triangleHeaders : commissionHeaders);
+        ExtremeBoundaryValues extremeBoundaryValues = (currentlyDisplayedMethod == TestingMethod.NormalBoundaryValues ? normalExtremeBoundaryValues : robustExtremeBoundaryValues);
 
         List<TestCase> testCases;
 
-        if (selectedProblem == Problem.Triangle) {
+        if (currentlyDisplayedProblem == Problem.Triangle) {
             Variable side = new Variable(5, 205);
             testCases = new TriangleTestGen(extremeBoundaryValues, side, side, side).getTestCases();
         } else {
@@ -173,10 +183,7 @@ public class MainFrame extends JFrame {
     }
 
     private void saveTestCases() {
-        Problem selectedProblem = (Problem) this.cmbProblem.getSelectedItem();
-        TestingMethod selectedMethod = (this.rbNormal.isSelected() ? TestingMethod.NormalBoundaryValues : TestingMethod.RobustBoundaryValues);
-
-        String defaultFileName = selectedProblem  + "_" + selectedMethod + ".csv";
+        String defaultFileName = currentlyDisplayedProblem + "_" + currentlyDisplayedMethod + ".csv";
 
         StringBuilder content = new StringBuilder();
         for (TestCase testCase : this.testCases) {
