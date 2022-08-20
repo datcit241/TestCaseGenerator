@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Add UI">
-      <change beforePath="$PROJECT_DIR$/src/main/java/views/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/MainFrame.java" afterDir="false" />
+    <list default="true" id="cc8f1b53-8ef4-480e-8e2f-780beb29cbcb" name="Changes" comment="Fix bugs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/abstraction/TestCaseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/abstraction/TestCaseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/implementation/CommissionTestGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/implementation/CommissionTestGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/MainFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/MainFrame.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/datvo/IdeaProjects/TestCaseGenerator/src/lib/flatlaf-2.4.jar",
     "project.structure.last.edited": "Modules",
@@ -117,7 +120,9 @@
       <workItem from="1660879266966" duration="5342000" />
       <workItem from="1660887967878" duration="14703000" />
       <workItem from="1660906736363" duration="12623000" />
-      <workItem from="1660920557114" duration="896000" />
+      <workItem from="1660920557114" duration="1193000" />
+      <workItem from="1660958295374" duration="45000" />
+      <workItem from="1660962506280" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="Implement all needed to gen testcases">
       <created>1658638366982</created>
@@ -140,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660920880291</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix bugs">
+      <created>1660921742195</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660921742195</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +173,7 @@
     <MESSAGE value="Implement all needed to gen testcases" />
     <MESSAGE value="Finish implementation" />
     <MESSAGE value="Add UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UI" />
+    <MESSAGE value="Fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs" />
   </component>
 </project>

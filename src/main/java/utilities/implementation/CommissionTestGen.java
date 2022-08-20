@@ -4,6 +4,7 @@ import entity.Variable;
 import utilities.abstraction.ExtremeBoundaryValues;
 import utilities.abstraction.TestCaseGenerator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CommissionTestGen extends TestCaseGenerator {

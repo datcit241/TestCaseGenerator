@@ -42,12 +42,25 @@ public abstract class TestCaseGenerator {
 
     public void initOutputValues() {
         this.testCases.forEach(testCase -> {
-            String output = this.calc(testCase.getInputValues());
-            testCase.setExpectedOutput(output);
+            if (!isInRange(testCase.getInputValues())) {
+                testCase.setExpectedOutput("Out of range");
+            } else {
+                String output = this.calc(testCase.getInputValues());
+                testCase.setExpectedOutput(output);
+            }
         });
     };
 
     public abstract String calc(List<Integer> values);
+
+    public boolean isInRange(List<Integer> values) {
+        for (int i = 0; i < variables.size(); i++) {
+            if (values.get(i) < variables.get(i).getMin() || values.get(i) > variables.get(i).getMax()) {
+                return false;
+            }
+        }
+        return true;
+    }
 
     public List<TestCase> getTestCases() { return this.testCases; }
 
